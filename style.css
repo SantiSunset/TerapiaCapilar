@@ -1,0 +1,45 @@
+/*
+ * style.css
+ * Cores pastel e ajustes para a identidade da Terapeuta Capilar
+ */
+
+/* 1. Cores e Tipografia */
+:root {
+    --bs-primary: #003366; /* Azul Marinho para contraste */
+    --bs-secondary: #bfe4e9; /* Verde Água Pastel para destaque */
+    --bs-info: #e6f2ff; /* Azul Claro Pastel para backgrounds leves */
+}
+
+/* Sobrescreve as variáveis do Bootstrap para usar suas cores nos componentes */
+.btn-primary {
+    background-color: var(--bs-primary);
+    border-color: var(--bs-primary);
+}
+
+.bg-info.bg-opacity-10 {
+    background-color: var(--bs-info) !important;
+}
+
+/* 2. Estilização da Hero Section */
+#hero {
+    /* Ajuste para garantir que a seção de destaque tenha altura suficiente */
+    min-height: 70vh; 
+    display: flex;
+    align-items: center;
+}
+
+/* 3. Imagens de Perfil/Cards */
+.rounded-circle {
+    border: 5px solid var(--bs-secondary); /* Borda em cor pastel na foto */
+}
+
+/* Ajuste das imagens dos casos para ter altura uniforme */
+.card-img-top {
+    height: 200px;
+    object-fit: cover; /* Garante que a imagem preencha o espaço sem distorcer */
+}
+
+/* Ajuste o botão de agendamento no Navbar */
+.navbar-nav .btn-primary {
+    padding: 0.5rem 1rem;
+}
